@@ -12,12 +12,11 @@ const ComponentInfoCard = ({ name, description, imageUrl }: IInfoCard) => {
       <Image
         src={imageUrl}
         alt={name}
-        width={70}
-        height={70}
-        className="mb-2 object-cover rounded-md"
+        fill
+        className="w-full h-32 mb-2 object-cover rounded-md"
       />
-      <h4 className="text-lg font-['Satoshi-Bold']">{name}</h4>
-      <p className="text-gray-600 font-['Satoshi-Medium']">{description}</p>
+      <h4 className="text-lg font-semibold">{name}</h4>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
 };
