@@ -27,16 +27,16 @@ export function VoluntarioSection() {
           />
 
           {/* Título principal */}
-          <h2 className="text-4xl font-[Satoshi-Medium] font-bold leading-tight">
+          <h2 className="text-4xl font-['Satoshi-Medium'] font-bold leading-tight">
             Transforme vidas <br />
             com{' '}
-            <span className="text-white font-[Satoshi-Black] font-extrabold">
+            <span className="text-white font-['Satoshi-Black'] font-extrabold">
               a gente!
             </span>
           </h2>
 
           {/* Lista de benefícios */}
-          <ul className="space-y-3 text-lg font-[Satoshi-Medium]">
+          <ul className="space-y-3 text-lg font-['Satoshi-Medium']">
             <li className="flex items-start gap-2">
               <img
                 src="/assets/icons/svg/Confirm_img.svg"
@@ -78,7 +78,7 @@ export function VoluntarioSection() {
         </div>
 
         {/* Coluna Direita */}
-        <div className="flex flex-col justify-center space-y-8 text-white font-[Satoshi-Medium] font-medium leading-[150%] tracking-[0]">
+        <div className="flex flex-col justify-center space-y-8 text-white font-['Satoshi-Medium'] font-medium leading-[150%] tracking-[0]">
           <div className="space-y-3">
             <Image
               src="/assets/icons/svg/Clique_img.svg"

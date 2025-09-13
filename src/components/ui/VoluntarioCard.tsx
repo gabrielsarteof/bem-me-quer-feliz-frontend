@@ -8,7 +8,7 @@ interface VoluntarioCardProps {
 
 export function VoluntarioCard({ imageSrc }: VoluntarioCardProps) {
   return (
-    <div className="relative w-[320px] md:w-[380px] lg:w-[420px] rounded-2xl overflow-hidden shadow-xl border-[3px] border-white">
+    <div className="relative w-[320px] md:w-[380px] lg:w-[420px] rounded-2xl overflow-hidden shadow-xl border-[3px] border-white font-['Satoshi-Medium'] ">
       {/* Imagem */}
       <Image
         src={imageSrc}
