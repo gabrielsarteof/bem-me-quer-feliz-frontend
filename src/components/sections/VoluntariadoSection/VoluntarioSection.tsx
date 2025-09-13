@@ -38,34 +38,42 @@ export function VoluntarioSection() {
           {/* Lista de benefícios */}
           <ul className="space-y-3 text-lg font-[Satoshi-Medium]">
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/assets/icons/svg/Confirm_img.svg"
                 alt="Ícone_confirm"
-                className="w-5 h-5 mt-1"
+                width={20}
+                height={20}
+                className="mt-1"
               />
               Participe de aulas culturais e esportivas
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/assets/icons/svg/Confirm_img.svg"
                 alt="Ícone_confirm"
-                className="w-5 h-5 mt-1"
+                width={20}
+                height={20}
+                className="mt-1"
               />
               Fortaleça vínculos e promova cidadania
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/assets/icons/svg/Confirm_img.svg"
                 alt="Ícone_confirm"
-                className="w-5 h-5 mt-1"
+                width={20}
+                height={20}
+                className="mt-1"
               />
               Apoie projetos que transformam vidas
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/assets/icons/svg/Confirm_img.svg"
                 alt="Ícone_confirm"
-                className="w-5 h-5 mt-1"
+                width={20}
+                height={20}
+                className="mt-1"
               />
               Desenvolva habilidades e experiências
             </li>
