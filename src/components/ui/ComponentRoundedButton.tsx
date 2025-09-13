@@ -17,7 +17,9 @@ const RoundedButton = ({
   className,
 }: IRoundedButton) => {
   return (
-    <div className="flex items-center gap-2 p-2 w-fit bg-[#F205871F] rounded-full ">
+    <div
+      className={`flex items-center gap-2 p-2 w-fit bg-[#F205871F] rounded-full`}
+    >
       {icon ? (
         <Image
           width={24}

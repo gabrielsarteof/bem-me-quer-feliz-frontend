@@ -31,15 +31,18 @@ const DATA_CARD = [
 
 const ActionsSection = () => {
   return (
-    <section className="my-16 mx-16 w-full max-w-7xl px-4">
-      <section className="flex flex-row items-center gap-10 my-10 text-center">
+    <section className="w-full max-w-7xl px-4 m-auto box-border">
+      <section className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row items-center gap-10 my-10 text-center box-border">
         <article>
-          <ComponentRoundedButton
-            title="Nossas Ações"
-            icon="/assets/icons/svg/dots.svg"
-            className="uppercase"
-          />
-          <h1 className="w-120 mt-4 max-w-4xl text-left font-['Satoshi-Medium'] text-3xl sm:text-4xl lg:text-5xl leading-tight">
+          <div className="flex justify-center sm:justify-center md:justify-center lg:justify-venter xl:justify-start">
+            <ComponentRoundedButton
+              title="Nossas Ações"
+              icon="/assets/icons/svg/dots.svg"
+              className="uppercase"
+            />
+          </div>
+
+          <h1 className=" mt-4 max-w-4xl text-center font-['Satoshi-Medium'] text-3xl sm:text-4xl sm:text-left lg:text-5xl leading-tight">
             Juntos, construímos
             <strong className="font-['Satoshi-Black']"> oportunidades.</strong>
             <br />
@@ -48,9 +51,7 @@ const ActionsSection = () => {
             </span>
           </h1>
         </article>
-        <div>
-          <ComponentSlideVideos />
-        </div>
+        <ComponentSlideVideos />
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
         {DATA_CARD.map((card, index) => (

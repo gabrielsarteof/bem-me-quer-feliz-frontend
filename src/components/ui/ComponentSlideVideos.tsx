@@ -47,15 +47,14 @@ const VideoCarousel = () => {
 
   return (
     <div
-      className="relative flex h-80 w-200 items-center justify-center
+      className="relative flex h-80 w-100 sm:w-180 items-center justify-center
     before:absolute before:left-1/2 before:top-1/2 
     before:-translate-x-1/3 before:-translate-y-1/2 
-    before:-z-10 before:h-[300px] before:w-[400px] 
+    before:-z-10 before:h-[200px] before:w-[300px] 
     before:rounded-full before:bg-pink-500/30 before:blur-[100px]
     before:content-['']"
     >
       <div className="absolute right-30 top-0 h-10 w-10">
-        {' '}
         <Image
           src="/assets/images/ui/estrela2.svg"
           alt="Estrela decorativa"
