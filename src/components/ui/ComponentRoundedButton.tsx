@@ -4,27 +4,29 @@ import Image from 'next/image';
 interface IRoundedButton {
   tag?: string;
   title: string;
-  icon?: string;
-  arrowIcon?: string;
+  leftIcon?: string;
+  rightIcon?: string;
+  isWhiteVersion?: boolean;
   className?: string;
 }
 
 const RoundedButton = ({
   tag,
   title,
-  icon,
-  arrowIcon,
+  leftIcon,
+  rightIcon,
+  isWhiteVersion,
   className,
 }: IRoundedButton) => {
   return (
     <div
-      className={`flex items-center gap-2 p-2 w-fit bg-[#F205871F] rounded-full`}
+      className={`flex items-center gap-2 p-2 w-fit ${isWhiteVersion ? 'bg-white' : 'bg-[#F205871F]'} rounded-full`}
     >
-      {icon ? (
+      {leftIcon ? (
         <Image
           width={24}
           height={24}
-          src={icon}
+          src={leftIcon}
           className="w-6 ml-2"
           alt="ícone"
         />
@@ -41,11 +43,10 @@ const RoundedButton = ({
           {title}
         </p>
       ) : null}
-      {arrowIcon ? (
-        <Image fill src={arrowIcon} className="w-6 mr-2" alt="seta" />
+      {rightIcon ? (
+        <Image fill src={rightIcon} className="w-6 mr-2" alt="seta" />
       ) : null}
     </div>
   );
 };
-
 export default RoundedButton;

@@ -37,7 +37,7 @@ const ActionsSection = () => {
           <div className="flex justify-center sm:justify-center md:justify-center lg:justify-venter xl:justify-start">
             <ComponentRoundedButton
               title="Nossas Ações"
-              icon="/assets/icons/svg/dots.svg"
+              leftIcon="/assets/icons/svg/dots.svg"
               className="uppercase"
             />
           </div>
