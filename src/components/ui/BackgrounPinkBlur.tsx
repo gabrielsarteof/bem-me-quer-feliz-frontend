@@ -1,5 +1,4 @@
-import { div } from 'framer-motion/client';
-import VolunteerCard from '../ui/VolunteerCard';
+import VolunteerCard from './VolunteerCard';
 import Image from 'next/image';
 
 function BackgroundPinkBlur() {
