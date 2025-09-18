@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { VoluntarioSection } from '@/components/sections';
 
 export default function Home() {
