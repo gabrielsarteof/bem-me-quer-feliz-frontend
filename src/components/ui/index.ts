@@ -1,1 +1,1 @@
-export { VoluntarioCard } from './VoluntarioCard';
+export { Card } from './Card';

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { VoluntarioCard } from '../../ui/VoluntarioCard';
+import { Card } from '../../ui/Card';
 
 export function VoluntarioSection() {
   return (
@@ -74,7 +74,13 @@ export function VoluntarioSection() {
 
         {/* Coluna Central */}
         <div className="flex items-center justify-center">
-          <VoluntarioCard imageSrc="/assets/images/content/karate_img.svg" />
+          <Card
+            imageSrc="/assets/images/content/karate_img.svg"
+            text_esq="Novo"
+            text_dir="Junte-se a nós"
+            title="Transforme seu tempo em oportunidades"
+            desc="Experiências que ficam para a vida toda."
+          />
         </div>
 
         {/* Coluna Direita */}
