@@ -4,7 +4,7 @@ import VolunteerCard from '@/components/ui/VolunteerCard';
 
 function IntroVisuals() {
   return (
-    <div className="relative md:w-full md:min-w-[1000px] md:-translate-y-10 h-90 sm:h-150">
+    <div className="relative md:w-full md:min-w-[1000px] md:-translate-y-10 h-90 mb-10 sm:mb-auto sm:h-150">
       <Image
         src="/assets/images/content/dropForm.png"
         width={1000}
