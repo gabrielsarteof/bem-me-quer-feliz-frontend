@@ -1,10 +1,10 @@
-import ActionsSection from '@/components/sections/ActionsSection';
+import { ProgramsSection } from '@/components/sections';
 
 export default function Home() {
   return (
     <div>
       <main>
-        <ActionsSection />
+        <ProgramsSection />
       </main>
     </div>
   );
