@@ -1,15 +1,14 @@
+import RoundedButton from '@/components/ui/RoundedButton';
+import EmphasisButton from '@/components/ui/EmphasisButton';
+import OutlineButton from '@/components/ui/OutlineButton';
 import Image from 'next/image';
+import IntroVisuals from '../ui/IntroVisuals';
 
-import RoundedButton from '../ui/RoundedButton';
-import EmphasisButton from '../ui/EmphasisButton';
-import OutlineButton from '../ui/OutlineButton';
-import BackgroundPinkBlur from '../ui/BackgrounPinkBlur';
-
-function IntroHome() {
+export default function IntroHome() {
   return (
-    <div className="m-20">
-      <div className="flex flex-col md:flex-row items-center justify-between md:ml-35 h-auto">
-        <div className="flex flex-col items-center md:items-start w-full md:w-auto h-auto">
+    <div className="relative flex flex-col-reverse md:flex-row">
+      <div className="flex h-auto flex-col md:flex-row items-center justify-between">
+        <div className="flex w-full h-auto flex-col items-center md:items-start md:w-auto">
           <RoundedButton
             tag="Novo"
             title="Cursos com vagas disponíveis"
@@ -17,54 +16,56 @@ function IntroHome() {
             rightIcon="/assets/icons/svg/arrowRight.svg"
           />
 
-          <div className="flex flex-col gap-10 w-full max-w-[700px] xl:min-w-[650px] xl:max-h-[433px] mb-20">
-            <h1 className="text-center md:text-left text-[32px] sm:text-[48px] md:text-[64px] font-[700] font-[satoshi-bold]">
+          <div className="mb-20 flex w-full max-w-[700px] xl:min-w-[650px] xl:max-h-[433px] flex-col gap-10">
+            <h1 className="text-left md:text-left text-[32px] sm:text-[48px] md:text-[64px] font-[700] font-[satoshi-bold]">
               Transformando vidas com cultura e solidariedade
             </h1>
-            <h2 className="text-center md:text-left md:max-w-[550px] text-[16px] sm:text-[20px] font-[500] font-[satoshi-medium]">
+            <h2 className="md:max-w-[550px] text-left md:text-left text-[16px] sm:text-[20px] font-[500] font-[satoshi-medium]">
               Há 14 anos oferecendo música, dança, esporte e convivência para
               crianças, jovens e famílias.
             </h2>
 
-            <div className="flex justify-center md:justify-start gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <EmphasisButton text="Doe Agora" />
               <OutlineButton text="Fale Conosco" />
             </div>
 
-            <div className="flex flex-col gap-8 text-center md:text-left md:ml-1 text-[16px] md:text-[20px] font-[700] h-auto md:max-w-[640px] mt-5">
-              <p className="text-[#6B7280] font-[satoshi-bold]">
+            <div className="mt-5 flex h-auto max-w-[640px] flex-col gap-8 text-center md:ml-1 md:text-left text-[16px] md:text-[20px] font-[700]">
+              <p className="font-[satoshi-bold] text-[#6B7280]">
                 Patrocinadores & Parceiros
               </p>
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-                <Image
-                  src={'/assets/images/content/reviews.png'}
-                  width={500}
-                  height={500}
-                  alt="Reviews"
-                  className="w-[25%] xs:w-[80px] sm:w-[120px] h-auto object-contain"
-                />
-                <Image
-                  src={'/assets/images/content/trustPilot.png'}
-                  width={500}
-                  height={500}
-                  alt="TrustPilot"
-                  className="w-[25%] xs:w-[80px] sm:w-[120px] h-auto object-contain"
-                />
-                <Image
-                  src={'/assets/images/content/capterra.png'}
-                  width={500}
-                  height={500}
-                  alt="Capterra"
-                  className="w-[25%] xs:w-[80px] sm:w-[120px] h-auto object-contain"
-                />
+              <div className="flex w-full md:w-100 gap-4 justify-center md:justify-start">
+                {/* divabaixo */}
+                <div className="flex justify-center md:full">
+                  <Image
+                    src="/assets/images/content/reviews.png"
+                    width={500}
+                    height={500}
+                    alt="Reviews"
+                    className="h-auto object-contain w-1/3"
+                  />
+                  <Image
+                    src="/assets/images/content/trustPilot.png"
+                    width={500}
+                    height={500}
+                    alt="TrustPilot"
+                    className="h-auto object-contain w-1/3"
+                  />
+                  <Image
+                    src="/assets/images/content/capterra.png"
+                    width={500}
+                    height={500}
+                    alt="Capterra"
+                    className="h-auto object-contain w-1/3"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <BackgroundPinkBlur />
       </div>
+
+      <IntroVisuals />
     </div>
   );
 }
-
-export default IntroHome;

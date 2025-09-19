@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import RoundedButton from './RoundedButton';
 
 interface VolunteerCardProps {
@@ -8,15 +7,18 @@ interface VolunteerCardProps {
 
 function VolunteerCard({ className }: VolunteerCardProps) {
   return (
-    <div className={`${className}`}>
-      <div className="relative w-50 h-70 sm:w-55 sm:h-80 md:w-70 md:h-80">
+    <div className={className}>
+      <div className="relative w-[70%] h-auto sm:w-55 sm:h-80 md:w-60 md:h-80">
         <div
-          className="relative z-10 flex flex-col items-center gap-2 w-full h-full p-4 
-          text-center text-[100%] font-medium 
-          bg-white/40 backdrop-blur-md border-t border-l border-white/40 rounded-xl shadow-md"
+          className="
+            relative z-10 flex flex-col items-center
+            w-full h-full p-4 gap-2
+            text-center text-[100%] font-medium
+            bg-white/40 backdrop-blur-md border-t border-l border-white/40 rounded-xl shadow-md
+          "
         >
           <Image
-            src={'/assets/images/content/volunteers.png'}
+            src="/assets/images/content/volunteers.png"
             width={2000}
             height={2000}
             alt="Voluntários"
