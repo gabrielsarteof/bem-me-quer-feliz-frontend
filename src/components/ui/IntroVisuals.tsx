@@ -1,4 +1,3 @@
-// components/sections/HeroImages.tsx
 import Image from 'next/image';
 import VolunteerCard from '@/components/ui/VolunteerCard';
 
