@@ -1,10 +1,10 @@
-import { ProgramsSection } from '@/components/sections';
+import EventsSection from '@/components/sections/EventsSection';
 
 export default function Home() {
   return (
     <div>
       <main>
-        <ProgramsSection />
+        <EventsSection />
       </main>
     </div>
   );
