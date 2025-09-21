@@ -88,6 +88,7 @@ export function VoluntarioSection() {
             text_dir="Junte-se a nós"
             title="Transforme seu tempo em oportunidades"
             desc="Experiências que ficam para a vida toda."
+            size="lg"
           />
         </div>
 
