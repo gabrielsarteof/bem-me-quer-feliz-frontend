@@ -8,7 +8,7 @@ interface IInfoCard {
 }
 const ComponentInfoCard = ({ name, description, imageUrl }: IInfoCard) => {
   return (
-    <div className="p-4">
+    <div className="p-4 rounded-[var(--radius-md)] font-satoshi ">
       <Image
         src={imageUrl}
         alt={name}
@@ -16,8 +16,10 @@ const ComponentInfoCard = ({ name, description, imageUrl }: IInfoCard) => {
         height={70}
         className="mb-2 object-cover rounded-md"
       />
-      <h4 className="text-lg font-['Satoshi-Bold']">{name}</h4>
-      <p className="text-gray-600 font-['Satoshi-Medium']">{description}</p>
+      <h4 className="text-lg font-bold font-satoshi text-[var(--color-foreground)]">
+        {name}
+      </h4>
+      <p className="text-body font-satoshi">{description}</p>
     </div>
   );
 };

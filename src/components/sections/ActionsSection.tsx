@@ -31,10 +31,10 @@ const DATA_CARD = [
 
 const ActionsSection = () => {
   return (
-    <section className="w-full max-w-7xl px-4 m-auto box-border">
-      <section className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row items-center gap-10 my-10 text-center box-border">
+    <section className="w-full max-w-7xl px-4  m-auto box-border  font-satoshi">
+      <section className="flex flex-col xl:flex-row items-center gap-10 my-10 text-center box-border">
         <article>
-          <div className="flex justify-center sm:justify-center md:justify-center lg:justify-venter xl:justify-start">
+          <div className="flex justify-center xl:justify-start">
             <ComponentRoundedButton
               title="Nossas Ações"
               leftIcon="/assets/icons/svg/dots.svg"
@@ -42,18 +42,18 @@ const ActionsSection = () => {
             />
           </div>
 
-          <h1 className=" mt-4 max-w-4xl text-center font-['Satoshi-Medium'] text-3xl sm:text-4xl sm:text-left lg:text-5xl leading-tight">
+          <h1 className="mt-4 max-w-4xl text-center font-bold font-satoshi text-3xl sm:text-4xl sm:text-left lg:text-5xl leading-tight text-[var(--color-foreground)]">
             Juntos, construímos
-            <strong className="font-['Satoshi-Black']"> oportunidades.</strong>
+            <strong className="font-black font-satoshi"> oportunidades.</strong>
             <br />
-            <span className="font-['sans-serif'] text-[#F20587]">
+            <span className="font-satoshi text-[var(--color-primary)]">
               Faça parte.
             </span>
           </h1>
         </article>
         <ComponentSlideVideos />
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8 items-stretch">
         {DATA_CARD.map((card, index) => (
           <ComponentInfoCard
             key={index}
