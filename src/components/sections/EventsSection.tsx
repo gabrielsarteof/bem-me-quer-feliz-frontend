@@ -28,7 +28,7 @@ const DATA_CARD = [
 
 const EventsSection = () => {
   return (
-    <section className="w-full max-w-7xl px-4 m-auto box-border">
+    <section className="w-full max-w-7xl px-4 m-auto box-border bg-[var(--color-background)] font-satoshi">
       <section className="py-12 text-left">
         <div className="flex justify-start mb-4">
           <ComponentRoundedButton
@@ -38,13 +38,15 @@ const EventsSection = () => {
           />
         </div>
         <div className="flex flex-col items-start gap-2">
-          <h2 className="text-5xl font-['Satoshi-Bold']">Nossas Ações</h2>
-          <p className="w-120 mt-2 font-['Satoshi-Medium']">
+          <h2 className="text-5xl font-bold font-satoshi text-[var(--color-foreground)]">
+            Nossas Ações
+          </h2>
+          <p className="w-full max-w-2xl mt-2 text-body font-satoshi">
             Fique por dentro do que está acontecendo na nossa ONG.
           </p>
         </div>
       </section>
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 items-stretch">
         {DATA_CARD.map((event, index) => (
           <ComponentEventsCard key={index} event={event} />
         ))}
