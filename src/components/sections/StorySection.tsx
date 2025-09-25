@@ -35,25 +35,25 @@ const DATA_CARD = [
 
 const StorySection = () => {
   return (
-    <section className="flex flex-col sm:flex-col md:flex-col lg:flex-col xl:flex-row justify-center gap-15 w-full max-w-7xl px-4 py-20 m-auto box-border">
-      <section className="py-12 text-left flex flex-col">
+    <section className="flex flex-col xl:flex-row justify-center gap-[var(--spacing-18)] w-full max-w-7xl px-4 py-20 m-auto box-border bg-[var(--color-background)] font-satoshi">
+      <section className="xl:w-1/3 py-3 xl:py-12 text-left flex flex-col">
         <ComponentRoundedButton
           title="Depoimentos"
           leftIcon="/assets/icons/svg/dots.svg"
           className="uppercase"
         />
         <div className="flex flex-col items-start gap-2 mt-4">
-          <h2 className="w-100 text-5xl font-['Satoshi-Bold']">
+          <h2 className="w-full max-w-2xl text-5xl font-bold font-satoshi text-[var(--color-foreground)]">
             O que dizem sobre nós
           </h2>
-          <p className="w-100 mt-2 font-['Satoshi-Medium']">
+          <p className="w-full max-w-2xl mt-2 text-body font-satoshi">
             Histórias reais de transformação através da cultura, esporte e
             assistência social.
           </p>
         </div>
       </section>
-      <section>
-        <section className="w-full sm:w-full lg:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
+      <section className="flex-1">
+        <section className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 items-stretch">
           {DATA_CARD.map((item, index) => {
             const isLastCol = index % 2 === 1;
             const margemExtra = isLastCol ? 'lg:-mt-8' : 'mt-0';

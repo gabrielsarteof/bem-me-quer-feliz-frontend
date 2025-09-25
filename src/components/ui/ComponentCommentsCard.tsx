@@ -15,8 +15,8 @@ const ComponentCommentsCard = ({
   typeUser,
 }: ICommentCard) => {
   return (
-    <div className="flex flex-col gap-2 justify-between h-full min-h-[220px] p-4 rounded-lg bg-[#F3F4F6] overflow-hidden">
-      <p className="mt-2 font-['Satoshi-Medium']">{commentText}</p>
+    <div className="flex flex-col gap-2 justify-between h-full min-h-[220px] p-4 rounded-[var(--radius-md)] bg-[var(--color-border-lighter)] font-satoshi shadow-[var(--shadow-card)] overflow-hidden">
+      <p className="mt-2 font-medium font-satoshi ">{commentText}</p>
       <div className="flex items-start mt-4">
         <Image
           src={userImage}
@@ -26,9 +26,9 @@ const ComponentCommentsCard = ({
           className="w-12 h-12 rounded-full"
         />
         <div className="flex flex-col gap-0.5 ml-3">
-          <h3 className="font-['Satoshi-Bold']">{userName}</h3>
+          <h3 className="font-bold font-satoshi text-base">{userName}</h3>
           {typeUser && (
-            <span className="text-sm text-[#4B5563] font-['Satoshi-Medium']">
+            <span className="text-sm text-[var(--color-text-muted)] font-satoshi">
               {typeUser}
             </span>
           )}
