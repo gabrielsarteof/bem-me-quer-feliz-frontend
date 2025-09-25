@@ -43,7 +43,7 @@ const DATA_CARD = [
 
 const ProgramsSection = () => {
   return (
-    <section className="w-full max-w-7xl px-4 m-auto box-border">
+    <section className="w-full max-w-7xl px-2 py-2  m-auto box-border bg-[var(--color-background)] font-satoshi">
       <section className="py-12 text-center">
         <div className="flex justify-center mb-4">
           <ComponentRoundedButton
@@ -53,8 +53,10 @@ const ProgramsSection = () => {
           />
         </div>
         <div className="flex flex-col items-center">
-          <h2 className="text-5xl font-['Satoshi-Bold']">O que oferecemos</h2>
-          <p className="w-120 mt-2 text-[#4B5563] font-['Satoshi-Medium'] ">
+          <h2 className="text-5xl font-bold font-satoshi text-[var(--color-foreground)]">
+            O que oferecemos
+          </h2>
+          <p className="w-full max-w-2xl mt-2 text-body font-satoshi">
             Conheça nossos programas e oportunidades de aprendizado, esporte e
             convivência.
           </p>
@@ -73,7 +75,7 @@ const ProgramsSection = () => {
         </div>
 
         {/* Cards */}
-        <section className="relative z-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <section className="relative z-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch">
           {DATA_CARD.map((card, index) => {
             const margemExtra = index % 3 === 1 ? 'lg:mt-[-40px]' : '';
             return (
