@@ -47,11 +47,11 @@ const VideoCarousel = () => {
 
   return (
     <div
-      className="relative flex h-80 w-100 sm:w-200 items-center justify-center
-    before:absolute before:left-1/2 before:top-1/2 
-    before:-translate-x-1/3 before:-translate-y-1/2 
-    before:-z-10 before:h-[200px] before:w-[300px] 
-    before:rounded-full before:bg-pink-500/30 before:blur-[100px]
+      className="relative flex h-80 w-100 sm:w-200 items-center justify-center font-satoshi
+    before:absolute before:left-1/3 before:top-1/2
+    before:-translate-x-1/4 before:-translate-y-1/2
+    before:-z-10 before:h-[200px] before:w-[200px] before:xl:w-[600px]
+    before:rounded-full before:bg-[var(--color-primary-500)]/40 before:blur-[100px]
     before:content-['']"
     >
       <div className="absolute right-30 top-0 h-10 w-10">
@@ -78,11 +78,11 @@ const VideoCarousel = () => {
           slideShadows: false,
         }}
         modules={[EffectCoverflow]}
-        className="!w-full !py-10"
+        className="!w-full !py-10 font-satoshi"
       >
         {videos.map(video => (
           <SwiperSlide key={video.id} className="!h-[200px] !w-[300px]">
-            <div className="relative h-full w-full overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-400 hover:shadow-[inset_0px_-50px_36px_-28px_rgba(0,0,0,0.35)] ">
+            <div className="relative h-full w-full overflow-hidden rounded-[var(--radius-md)] shadow-[var(--shadow-card)] hover:scale-105 transition-transform duration-400 hover:shadow-[inset_0px_-50px_36px_-28px_rgba(0,0,0,0.35)] bg-[var(--color-border-lighter)] font-satoshi">
               <Image
                 fill
                 src={video.thumbnail}
@@ -92,7 +92,7 @@ const VideoCarousel = () => {
 
               <button
                 onClick={() => setSelectedVideo(video.videoUrl)}
-                className="absolute bottom-4 right-15 z-10 px-4 py-2 font-['Satoshi-Bold'] text-black bg-white/80 shadow-lg backdrop-blur-sm cursor-pointer rounded-full"
+                className="absolute bottom-4 right-15 z-10 px-4 py-2 font-bold font-satoshi text-black bg-white/80 shadow-[var(--shadow-soft)] backdrop-blur-sm cursor-pointer rounded-full"
               >
                 <div className="flex items-center gap-2">
                   <div className="flex items-center justify-center p-1 w-10 h-10 bg-white/50 backdrop-blur rounded-full">
@@ -123,11 +123,11 @@ const VideoCarousel = () => {
 
       {selectedVideo && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 font-satoshi"
           onClick={() => setSelectedVideo(null)}
         >
           <div
-            className="relative w-full max-w-4xl"
+            className="relative w-full max-w-4xl bg-[var(--color-background)] rounded-[var(--radius-md)] shadow-[var(--shadow-card)] p-4"
             onClick={e => e.stopPropagation()}
           >
             <button
@@ -140,7 +140,7 @@ const VideoCarousel = () => {
               src={selectedVideo}
               controls
               autoPlay
-              className="w-full h-150"
+              className="w-full h-150 rounded-[var(--radius-md)]"
             />
           </div>
         </div>

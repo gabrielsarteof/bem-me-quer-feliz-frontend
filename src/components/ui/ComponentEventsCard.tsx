@@ -17,12 +17,14 @@ const ComponentEventsCard = ({ event }: { event: IEvent }) => {
         alt={event.name}
         width={500}
         height={300}
-        className="object-cover rounded-lg mb-4"
+        className="object-cover rounded-[var(--radius-md)] mb-4"
       />
       <ComponentRoundedButton title={event.data} className="uppercase" />
-      <div className="flex flex-col gap-2 mt-4 w-80">
-        <h3 className='text-lg font-["Satoshi-Bold"]'>{event.name}</h3>
-        <p className='text-sm font-["Satoshi-Regular"]'>{event.description}</p>
+      <div className="flex flex-col gap-2 mt-4 w-full">
+        <h3 className="text-lg font-bold font-satoshi text-[var(--color-foreground)]">
+          {event.name}
+        </h3>
+        <p className="text-body font-satoshi">{event.description}</p>
       </div>
     </div>
   );
