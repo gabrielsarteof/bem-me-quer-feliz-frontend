@@ -20,31 +20,31 @@ const RoundedButton = ({
 }: IRoundedButton) => {
   return (
     <div
-      className={`flex items-center gap-2 p-2 w-fit ${isWhiteVersion ? 'bg-white' : 'bg-[#F205871F]'} rounded-full`}
+      className={`flex items-center gap-2 p-2 w-fit ${isWhiteVersion ? 'bg-white' : 'bg-[var(--color-primary-500)]/12'} rounded-full`}
     >
       {leftIcon ? (
         <Image
           width={24}
           height={24}
           src={leftIcon}
-          className="w-6 ml-2"
+          className="ml-2"
           alt="ícone"
         />
       ) : null}
       {tag ? (
-        <div className="flex items-center justify-center ml-2 px-2 py-1 text-xs font-medium bg-[#FF008C] text-white rounded-full">
+        <div className="flex items-center justify-center ml-2 px-2 py-1 text-xs font-bold text-white rounded-full">
           {tag}
         </div>
       ) : null}
       {title ? (
         <p
-          className={`mr-2 text-[#FF008C] font-['Satoshi-Bold'] text-xs ${className}`}
+          className={`mr-2 text-[var(--color-primary-500)] font-bold font-satoshi text-xs ${className}`}
         >
           {title}
         </p>
       ) : null}
       {rightIcon ? (
-        <Image fill src={rightIcon} className="w-6 mr-2" alt="seta" />
+        <Image fill src={rightIcon} className="mr-2" alt="seta" />
       ) : null}
     </div>
   );

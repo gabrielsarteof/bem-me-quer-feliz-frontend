@@ -1,19 +1,5 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import 'src/styles/globals.css';
-import './fonts/WEB/css/satoshi.css';
-
-const satoshi = localFont({
-  src: [
-    {
-      path: './fonts/WEB/fonts/Satoshi-Variable.woff2',
-      weight: '100 900',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-satoshi',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshi.variable} antialiased`}>{children}</body>
+      <body className="antialiased" style={{ fontFamily: 'var(--font-sans)' }}>
+        {children}
+      </body>
     </html>
   );
 }
