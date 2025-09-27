@@ -12,17 +12,42 @@ const SquareRoundedButton = ({
   arrowIcon?: string;
 }) => {
   return (
-    <div className="flex items-center gap-2 p-2 bg-linear-to-r from-[#F20587] to-[#FF2DA0] rounded-[10px] w-[237px] h-[58]">
+    <a
+      href=""
+      className="
+        flex items-center gap-2
+        w-[30vw] h-[3vh] sm:w-[30vw] sm:h-[5vh] lg:w-[16vw] lg:h-[7vh]
+        p-1 sm:px-1 lg:px-5
+        rounded-[5px] lg:rounded-[10px]
+        bg-gradient-to-r from-[#F20587] to-[#FF2DA0]
+      "
+    >
       {tag ? (
-        <div className="flex ml-8 px-2 py-1 items-center justify-center bg-[#FF008C] text-white text-xs font-medium rounded-full" >
+        <div
+          className="
+            flex items-center justify-center
+            ml-8 px-2 py-1
+            rounded-full
+            bg-[#FF008C]
+            text-white text-xs font-medium
+          "
+        >
           {tag}
         </div>
       ) : null}
-      <p className="text-white font-[satoshi-bold] text-[16px] ml-5">{title}</p>
+      <p className="ml-2 text-white font-[satoshi-bold] text-[8px] sm:text-[16px] lg:text-center">
+        {title}
+      </p>
       {arrowIcon ? (
-        <Image width={24} height={24} src={arrowIcon} className="" alt="seta" />
+        <Image
+          width={24}
+          height={24}
+          src={arrowIcon}
+          alt="seta"
+          className="w-[3vw] sm:w-[4vw] lg:w-[1.8vw]"
+        />
       ) : null}
-    </div>
+    </a>
   );
 };
 
