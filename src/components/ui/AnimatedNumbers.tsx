@@ -39,7 +39,7 @@ function AnimatedNumbers(props: AnimatedNumberProps) {
                 className="
                     inline-block
                     text-[20px] sm:text-[24px] md:text-[30px] lg:text-[48px]
-                    font-[satoshi-black]
+                    font-satoshi
                     text-black
                 "
             >

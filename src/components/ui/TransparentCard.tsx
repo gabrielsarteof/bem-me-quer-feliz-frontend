@@ -86,7 +86,7 @@ const TransparentCard: React.FC<TransparentCardProps> = ({
             <p className="
               text-center
               text-[10px] text-sm md:text-[14px]
-              font-[satoshi-medium]
+              font-satoshi font-medium
               text-neutral-600
             ">
               {description}

@@ -22,20 +22,20 @@ const SupportersSection = () => {
                             <TransparentCard 
                                 title='Impacto que cresce' 
                                 description='Mais de 50 empresas confiando em nós.' 
-                                fontStyle='font-[satoshi-bold] text-black text-[12px] text-base md:text-[16px] lg:text-[20px]' 
+                                fontStyle='font-satoshi font-bold text-black text-[12px] text-base md:text-[16px] lg:text-[20px]' 
                                 icon={["/assets/images/content/image.svg", "/assets/images/content/image-2.svg", "/assets/images/content/image-1.svg"]}
                             />
                         </div>
                     </div>
 
                     <div className='lg:mt-[3em]'>
-                        <h4 className="mb-2 text-[14px] sm:text-[16px] md:text-[20px] font-[satoshi-bold] text-neutral-900">
+                        <h4 className="mb-2 text-[14px] sm:text-[16px] md:text-[20px] font-satoshi font-bold text-neutral-900">
                             Apoiadores e Parceiros
                         </h4>
-                        <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight font-[satoshi-bold] text-neutral-900">
+                        <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight font-satoshi font-bold text-neutral-900">
                             Juntos, ampliamos nosso impacto social.
                         </h1>
-                        <p className="mb-5 text-[12px] sm:text-[16px] lg:text-[20px] font-[satoshi-medium] text-neutral-900">
+                        <p className="mb-5 text-[12px] sm:text-[16px] lg:text-[20px] font-satoshi font-medium text-neutral-900">
                             Empresas e organizações que acreditam na nossa causa ajudam a transformar vidas todos os dias.
                         </p>
                     </div>
@@ -53,7 +53,7 @@ const SupportersSection = () => {
                                 />
                             </div>
                             <div className="pl-0 sm:pl-8">
-                                <h4 className="text-center sm:text-left underline text-[10px] sm:text-[16px] md:text-[16px] font-[satoshi-bold] text-neutral-900">
+                                <h4 className="text-center sm:text-left underline text-[10px] sm:text-[16px] md:text-[16px] font-satoshi font-bold text-neutral-900">
                                     Como nós atuamos
                                 </h4>
                             </div>

@@ -15,7 +15,7 @@ const CardWithAnimatedNumbers = (props: CardWithAnimatedNumbersProps) => {
                 <p className="
                     lg:mt-[5px] sm:ml-[1px] lg:ml-[2px]
                     text-[12px] sm:text-[16px] lg:text-[24px]
-                    font-[satoshi-medium]
+                    font-satoshi font-medium
                     text-neutral-900
                 ">
                     %
@@ -25,7 +25,7 @@ const CardWithAnimatedNumbers = (props: CardWithAnimatedNumbersProps) => {
                 <p className="
                     inline-block align-middle
                     text-[10px] sm:text-[16px]
-                    font-[satoshi-medium]
+                    font-satoshi font-medium
                     text-neutral-900
                 ">
                     {props.title}

@@ -35,7 +35,7 @@ const SquareRoundedButton = ({
           {tag}
         </div>
       ) : null}
-      <p className="ml-2 text-white font-[satoshi-bold] text-[8px] sm:text-[16px] lg:text-center">
+      <p className="ml-2 text-white font-satoshi font-bold text-[8px] sm:text-[16px] lg:text-center">
         {title}
       </p>
       {arrowIcon ? (
