@@ -16,7 +16,6 @@ function AnimatedNumbers(props: AnimatedNumberProps) {
             ? 4 * t * t * t
             : 1 - Math.pow(-2 * t + 2, 3) / 2;
     };
-
     const number = useSpring({
         from: { number: 0 },
         to: { number: isInView ? props.value : 0 },
