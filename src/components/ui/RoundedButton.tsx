@@ -21,7 +21,7 @@ const RoundedButton = ({
   return (
     <div
       className={`flex items-center gap-2 w-fit p-2 ${
-        isWhiteVersion ? 'bg-white' : 'bg-[#F205871F]'
+        isWhiteVersion ? 'bg-white' : 'bg-[var(--color-primary-100)]'
       } rounded-full`}
     >
       {leftIcon ? (
@@ -35,14 +35,14 @@ const RoundedButton = ({
       ) : null}
 
       {tag ? (
-        <div className="flex items-center justify-center px-2 py-1 ml-2 text-xs font-medium bg-[#FF008C] text-white rounded-full">
+        <div className="flex items-center justify-center px-2 py-1 ml-2 text-xs font-medium bg-[var(--color-primary-500)] text-white rounded-full">
           {tag}
         </div>
       ) : null}
 
       {title ? (
         <p
-          className={`text-xs text-[#FF008C] font-['Satoshi-Bold'] mr-2 ${className}`}
+          className={`text-2xs text-[var(--color-primary-500)] font-satoshi font-bold mr-2 ${className}`}
         >
           {title}
         </p>

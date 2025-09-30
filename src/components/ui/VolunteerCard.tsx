@@ -24,10 +24,10 @@ function VolunteerCard({ className }: VolunteerCardProps) {
             alt="Voluntários"
             className="w-[95%] rounded-xl"
           />
-          <h3 className="text-[110%] sm:text-[130%] font-bold font-[satoshi-bold]">
+          <h3 className="text-[110%] sm:text-[130%] font-satoshi font-bold">
             Seja um Voluntário
           </h3>
-          <p className="sm:w-[70%] md:w-[80%] font-[satoshi-medium]">
+          <p className="sm:w-[70%] md:w-[80%] font-satoshi font-medium">
             Dedique seu tempo e talento em oficinas.
           </p>
           <RoundedButton
