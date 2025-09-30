@@ -1,4 +1,4 @@
-import DonationCards from './DonationsCards';
+import DonationCards from '../ui/DonationsCards';
 import MonthlyFees from '../ui/MonthlyFees';
 import RoundedButton from '../ui/RoundedButton';
 
