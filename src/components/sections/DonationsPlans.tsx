@@ -33,17 +33,14 @@ function DonationsPlans() {
           bg-white rounded-2xl shadow-2xl
         "
       >
-        {/* Linhas horizontais (mobile) */}
         <div className="absolute top-1/4 left-0 right-0 border-t border-gray-200 block sm:hidden xl:hidden" />
         <div className="absolute top-2/4 left-0 right-0 border-t border-gray-200 block sm:block xl:hidden" />
         <div className="absolute top-3/4 left-0 right-0 border-t border-gray-200 block sm:hidden xl:hidden" />
 
-        {/* Linhas verticais (desktop) */}
         <div className="absolute top-0 bottom-0 left-1/4 border-l border-gray-200 hidden md:hidden xl:block" />
         <div className="absolute top-0 bottom-0 left-2/4 border-l border-gray-200 hidden sm:block xl:block" />
         <div className="absolute top-0 bottom-0 left-3/4 border-l border-gray-200 hidden md:hidden xl:block" />
 
-        {/* Cards */}
         <DonationCards
           title="Plano Flexível"
           subtitle="Contribua com qualquer valor"
