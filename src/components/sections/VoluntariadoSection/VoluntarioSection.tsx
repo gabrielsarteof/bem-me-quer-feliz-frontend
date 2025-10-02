@@ -5,7 +5,7 @@ import { Card } from '../../ui/Card';
 
 export function VoluntarioSection() {
   return (
-    <section className="relative w-full min-h-screen bg-[#F20587] flex items-center justify-center px-6 py-12">
+    <section className="relative w-full min-h-screen bg-[#F20587] flex items-center justify-center px-6 py-12 font-satoshi">
       {/* Logo no canto */}
       <Image
         src="/assets/icons/svg/Logo_img.svg"
@@ -15,9 +15,9 @@ export function VoluntarioSection() {
         className="absolute bottom-0 left-0 w-[50%] max-w-[461px] h-auto opacity-8"
       />
 
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 text-white relative">
+      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 text-white relative font-satoshi">
         {/* Coluna Esquerda */}
-        <div className="flex flex-col justify-center space-y-6 relative">
+        <div className="flex flex-col justify-center space-y-6 relative font-satoshi">
           {/* Ícone do foguete */}
           <Image
             src="/assets/icons/svg/Foguete.svg"
@@ -27,16 +27,16 @@ export function VoluntarioSection() {
           />
 
           {/* Título principal */}
-          <h2 className="text-4xl font-['Satoshi-Medium'] font-bold leading-tight">
+          <h2 className="text-4xl leading-tight font-satoshi font-medium">
             Transforme vidas <br />
             com{' '}
-            <span className="text-white font-['Satoshi-Black'] font-extrabold">
+            <span className="text-white font-satoshi font-extrabold">
               a gente!
             </span>
           </h2>
 
           {/* Lista de benefícios */}
-          <ul className="space-y-3 text-lg font-['Satoshi-Medium']">
+          <ul className="space-y-3 text-lg font-satoshi leading-[130%] tracking-[0]">
             <li className="flex items-start gap-2">
               <Image
                 width={20}
@@ -93,7 +93,7 @@ export function VoluntarioSection() {
         </div>
 
         {/* Coluna Direita */}
-        <div className="flex flex-col justify-center space-y-8 text-white font-['Satoshi-Medium'] font-medium leading-[150%] tracking-[0]">
+        <div className="flex flex-col justify-center space-y-8 text-white font-satoshi font-medium leading-[150%] tracking-[0]">
           <div className="space-y-3">
             <Image
               src="/assets/icons/svg/Clique_img.svg"
