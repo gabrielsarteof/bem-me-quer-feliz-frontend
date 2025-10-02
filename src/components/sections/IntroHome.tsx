@@ -16,7 +16,7 @@ export default function IntroHome() {
             rightIcon="/assets/icons/svg/arrowRight.svg"
           />
 
-          <div className="mb-20 flex w-full max-w-[700px] xl:min-w-[650px] xl:max-h-[433px] flex-col gap-10">
+          <div className="mb-20 flex w-full max-w-[700px] xl:min-w-[650px] flex-col gap-10">
             <h1 className="text-left md:text-left text-[32px] sm:text-[48px] md:text-[64px]  font-satoshi font-bold">
               Transformando vidas com cultura e solidariedade
             </h1>
