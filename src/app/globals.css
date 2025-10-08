@@ -1,26 +1,448 @@
+/* Importação da fonte Satoshi */
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Importação do Tailwind CSS v4 */
 @import 'tailwindcss';
+
+/* ========================================
+   DESIGN TOKENS GLOBAIS
+======================================== */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
+  /* Cores do sistema */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Cores primárias - Magenta #F20587 */
+  --color-primary-50: #fef2f7;
+  --color-primary-100: #fde6f0;
+  --color-primary-200: #fbcce2;
+  --color-primary-300: #f8a3cb;
+  --color-primary-400: #f470a9;
+  --color-primary-500: #f20587;
+  --color-primary-600: #db0479;
+  --color-primary-700: #b8065f;
+  --color-primary-800: #980750;
+  --color-primary-900: #7d0945;
+  --color-primary: #f20587;
+
+  /* Cores secundárias - Azul #139DF2 */
+  --color-secondary-50: #eff8ff;
+  --color-secondary-100: #dbeffe;
+  --color-secondary-200: #bfe3fe;
+  --color-secondary-300: #93d4fd;
+  --color-secondary-400: #60bbfa;
+  --color-secondary-500: #139df2;
+  --color-secondary-600: #0284f6;
+  --color-secondary-700: #0369e2;
+  --color-secondary-800: #0754b7;
+  --color-secondary-900: #0c4690;
+  --color-secondary: #139df2;
+
+  /* Cores de texto compartilhadas */
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+  --color-border-light: #e5e7eb;
+  --color-border-lighter: #f3f4f6;
+
+  /* Fonte personalizada */
+  --font-sans: 'Satoshi', system-ui, sans-serif;
+  --font-satoshi: 'Satoshi', system-ui, sans-serif;
+
+  /* Sombras compartilhadas */
+  --shadow-soft:
+    0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  --shadow-card:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-hover:
+    0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Espaçamentos extras para uso comum */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+
+  /* Border radius padrão */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+
+  /* Transições padrão */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.2s ease-in-out;
+  --transition-slow: 0.3s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-text-muted: #9ca3af;
+    --color-text-light: #6b7280;
+    --color-border-light: #374151;
+    --color-border-lighter: #1f2937;
   }
 }
+
+/* ========================================
+   RESET E CONFIGURAÇÕES BASE
+======================================== */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* ========================================
+   TIPOGRAFIA PADRONIZADA
+======================================== */
+
+.heading-1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .heading-1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-1 {
+    font-size: 3rem;
+  }
+}
+
+.heading-2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .heading-2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-2 {
+    font-size: 2.25rem;
+  }
+}
+
+.heading-3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .heading-3 {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .heading-4 {
+    font-size: 1.25rem;
+  }
+}
+
+.text-lead {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.625;
+}
+
+@media (min-width: 768px) {
+  .text-lead {
+    font-size: 1.125rem;
+  }
+}
+
+.text-body {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.625;
+}
+
+@media (min-width: 768px) {
+  .text-body {
+    font-size: 1rem;
+  }
+}
+
+.text-small {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+/* ========================================
+   COMPONENTES BASE COMPARTILHADOS
+======================================== */
+
+/* Botões - Estilos base que toda a equipe vai usar */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-normal);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-600);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-normal);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-600);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-primary);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--color-secondary);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-secondary);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+/* ========================================
+   UTILITÁRIOS COMPARTILHADOS
+======================================== */
+
+/* Containers responsivos */
+.section-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.container-narrow {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-narrow {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-narrow {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Gradientes compartilhados */
+.text-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-50) 0%,
+    var(--color-secondary-50) 100%
+  );
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-100) 0%,
+    var(--color-secondary-100) 50%,
+    #ffffff 100%
+  );
+}
+
+/* Animações base */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   UTILITÁRIOS DE ACESSIBILIDADE
+======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus states consistentes */
+.focus-outline {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   RESET PARA ELEMENTOS ESPECÍFICOS
+======================================== */
+
+/* Reset para botões - cada componente define seu próprio estilo */
+button {
+  font-family: inherit;
+}
+
+/* Reset para inputs - cada componente define seu próprio estilo */
+input,
+textarea,
+select {
+  font-family: inherit;
 }
