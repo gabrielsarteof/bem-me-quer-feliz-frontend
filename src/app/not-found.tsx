@@ -1,43 +1,17 @@
-// src/app/not-found.tsx
-'use client';
-
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NotFound() {
-  const router = useRouter();
-
-  // Exemplo: redirecionar automaticamente após 5 segundos
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      router.push('/');
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, [router]);
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#f9fafb] px-6 text-center">
-      <Image
-        src="/assets/images/404.svg" // coloque uma imagem de 404 na pasta public
-        alt="Página não encontrada"
-        width={300}
-        height={300}
-      />
-      <h1 className="text-6xl font-bold text-gray-800 mt-6">404</h1>
-      <p className="text-xl text-gray-600 mt-2">
-        Ops! A página que você procura não foi encontrada.
+    <div className="flex min-h-screen flex-col items-center justify-center text-center px-4">
+      <h1 className="text-3xl font-bold text-primary mb-4">
+        Página não encontrada
+      </h1>
+      <p className="text-gray-600 mb-6">
+        A página que você está procurando não existe ou foi movida.
       </p>
-      <button
-        onClick={() => router.push('/')}
-        className="mt-6 px-6 py-3 bg-[#F20587] text-white rounded-lg hover:bg-[#d90479] transition-colors"
-      >
-        Voltar para a Home
-      </button>
-      <p className="mt-4 text-gray-500 text-sm">
-        Você será redirecionado para a página inicial em 5 segundos.
-      </p>
+      <Link href="/" className="btn-primary">
+        Voltar para a página inicial
+      </Link>
     </div>
   );
 }
