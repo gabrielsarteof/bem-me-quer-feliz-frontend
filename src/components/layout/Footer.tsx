@@ -47,29 +47,30 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[#0f1729] text-white overflow-hidden">
-      {/* Background Image com Overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <Image
-          src="/assets/images/ui/footer-background.svg"
-          alt=""
-          fill
-          className="object-cover"
-          priority={false}
-        />
-      </div>
+    <footer className="relative mt-auto text-white overflow-hidden min-h-[400px] sm:min-h-[450px] lg:min-h-[500px]">
+      {/* Background Image SVG - Versão Final Otimizada */}
+      <div
+        className="absolute inset-0 z-20"
+        style={{
+          backgroundImage: 'url(/assets/images/ui/footer-background.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 1,
+        }}
+      />
 
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0f1729]/95 to-[#0f1729]" />
+      {/* Overlay Gradient para Legibilidade */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0f1729]/80 via-[#0f1729]/85 to-[#0f1729]/90 z-10" />
 
       {/* Content */}
-      <div className="relative section-container py-10 lg:py-16">
+      <div className="relative z-20 section-container py-8 lg:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-2">
               <Image
-                src="/assets/images/logos/logo-icon.svg"
+                src="/assets/images/logos/logo.svg"
                 alt="Bem Me Quer"
                 width={32}
                 height={32}
