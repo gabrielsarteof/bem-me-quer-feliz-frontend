@@ -15,7 +15,7 @@ export function VoluntarioSection() {
         className="absolute bottom-0 left-0 w-[50%] max-w-[461px] h-auto opacity-8"
       />
 
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-12 text-white relative font-satoshi">
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-12 justify-center text-white relative font-satoshi">
         {/* Coluna Esquerda */}
         <div className="flex flex-col justify-center space-y-6 relative font-satoshi">
           {/* Ícone do foguete */}
@@ -81,14 +81,13 @@ export function VoluntarioSection() {
         </div>
 
         {/* Coluna Central */}
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center h-full">
           <Card
             imageSrc="/assets/images/content/karate_img.svg"
             text_esq="Novo"
             text_dir="Junte-se a nós"
             title="Transforme seu tempo em oportunidades"
             desc="Experiências que ficam para a vida toda."
-            size="lg"
           />
         </div>
 

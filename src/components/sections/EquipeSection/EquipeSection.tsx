@@ -1,6 +1,7 @@
 'use client';
 
 import { Card } from '../../ui/Card';
+import RoundedButton from '../../ui/ComponentRoundedButton';
 
 export default function EquipeSection() {
   const equipe = [
@@ -56,7 +57,7 @@ export default function EquipeSection() {
 
   return (
     <section
-      className="relative w-full min-h-screen bg-white px-6 py-12 font-satoshi"
+      className="relative w-full bg-white px-6 py-12 font-satoshi"
       style={{
         backgroundImage: "url('/assets/images/ui/fundo.svg')",
         backgroundSize: 'cover',
@@ -64,6 +65,15 @@ export default function EquipeSection() {
         backgroundRepeat: 'no-repeat',
       }}
     >
+      {/* Botão centralizado */}
+      <div className="flex justify-center mb-8">
+        <RoundedButton
+          title="NOSSO TIME"
+          leftIcon="/assets/icons/svg/dots.svg"
+          className="uppercase"
+        />
+      </div>
+
       {/* Título da Seção */}
       <div className="text-center max-w-2xl mx-auto mb-12 font-satoshi">
         <h2 className="text-3xl md:text-4xl font-satoshi font-bold text-gray-900 mb-4">
@@ -76,14 +86,19 @@ export default function EquipeSection() {
       </div>
 
       {/* Container responsivo */}
-      <div className="flex gap-[30px] overflow-x-auto pb-4 scrollbar-hide md:grid md:grid-cols-3 lg:grid-cols-4 md:gap-[30px] md:overflow-visible max-w-[1314px] min-h-[836px] mx-auto font-satoshi">
-        {equipe.map((membro, index) => (
-          <div key={index} className="flex-shrink-1 md:flex-shrink">
+      <div
+        className="flex gap-[30px] overflow-x-auto pb-4 scrollbar-hide max-w-7xl mx-auto font-satoshi
+        md:grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 lg:gap-[15px] xl:gap-[15px] md:gap-[20px] md:overflow-visible sm:gap-[30px]"
+      >
+        {equipe.map(membro => (
+          <div
+            key={membro.title}
+            className="min-w-[260px] flex-shrink-0 md:min-w-0 md:w-full"
+          >
             <Card
               imageSrc={membro.imageSrc}
               title={membro.title}
               desc={membro.desc}
-              size="md"
               arrow={membro.arrow}
             />
           </div>

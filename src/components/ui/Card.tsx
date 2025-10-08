@@ -10,14 +10,7 @@ interface CardProps {
   title?: string;
   desc?: string;
   arrow?: boolean;
-  size?: 'sm' | 'md' | 'lg';
 }
-
-const sizeCard = {
-  sm: 'w-[250px] h-[350px]',
-  md: 'w-[320px] h-[450px]',
-  lg: 'w-[380px] h-[500px]',
-};
 
 export function Card({
   imageSrc,
@@ -26,11 +19,10 @@ export function Card({
   title,
   desc,
   arrow,
-  size = 'md',
 }: CardProps) {
   return (
     <div
-      className={`relative rounded-2xl overflow-hidden shadow-xl border-[3px] font-satoshi border-white ${sizeCard[size]}`}
+      className={`relative rounded-2xl overflow-hidden shadow-xl border-[3px] font-satoshi border-white w-full h-[520px] `}
     >
       {/* Imagem */}
       <Image
