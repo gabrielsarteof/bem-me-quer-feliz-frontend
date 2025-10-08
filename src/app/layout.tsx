@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 import { Header } from '@/components/layout';
+import { ComponentButtonReturnTop } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Bem Me Quer Feliz',
@@ -28,6 +29,7 @@ export default function RootLayout({
           showAnnouncement
         />
         <main>{children}</main>
+        <ComponentButtonReturnTop />
       </body>
     </html>
   );
