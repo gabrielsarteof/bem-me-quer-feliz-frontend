@@ -1,0 +1,52 @@
+<svg width="1619" height="1009" viewBox="0 0 1619 1009" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.15" filter="url(#filter0_f_0_1)">
+<ellipse cx="303.16" cy="609.472" rx="303.16" ry="609.472" transform="matrix(-0.0133581 0.999911 -0.999382 -0.035158 1422.29 222.855)" fill="#F20587"/>
+</g>
+<mask id="mask0_0_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="385" y="102" width="832" height="832">
+<circle cx="801" cy="518" r="416" fill="url(#paint0_radial_0_1)"/>
+</mask>
+<g mask="url(#mask0_0_1)">
+<line x1="101" y1="194.5" x2="1533" y2="194.5" stroke="#F20587"/>
+<line x1="101" y1="244.5" x2="1533" y2="244.5" stroke="#F20587"/>
+<line x1="101" y1="294.5" x2="1533" y2="294.5" stroke="#F20587"/>
+<line x1="101" y1="344.5" x2="1533" y2="344.5" stroke="#F20587"/>
+<line x1="101" y1="394.5" x2="1533" y2="394.5" stroke="#F20587"/>
+<line x1="101" y1="444.5" x2="1533" y2="444.5" stroke="#F20587"/>
+<line x1="101" y1="494.5" x2="1533" y2="494.5" stroke="#F20587"/>
+<line x1="101" y1="544.5" x2="1533" y2="544.5" stroke="#F20587"/>
+<line x1="101" y1="594.5" x2="1533" y2="594.5" stroke="#F20587"/>
+<line x1="101" y1="644.5" x2="1533" y2="644.5" stroke="#F20587"/>
+<line x1="101" y1="694.5" x2="1533" y2="694.5" stroke="#F20587"/>
+<line x1="101" y1="744.5" x2="1533" y2="744.5" stroke="#F20587"/>
+<line x1="101" y1="794.5" x2="1533" y2="794.5" stroke="#F20587"/>
+<line x1="101" y1="844.5" x2="1533" y2="844.5" stroke="#F20587"/>
+<line x1="101" y1="894.5" x2="1533" y2="894.5" stroke="#F20587"/>
+<line x1="466.5" y1="1261" x2="466.5" y2="-171" stroke="#F20587"/>
+<line x1="516.5" y1="1261" x2="516.5" y2="-171" stroke="#F20587"/>
+<line x1="566.5" y1="1261" x2="566.5" y2="-171" stroke="#F20587"/>
+<line x1="616.5" y1="1261" x2="616.5" y2="-171" stroke="#F20587"/>
+<line x1="666.5" y1="1261" x2="666.5" y2="-171" stroke="#F20587"/>
+<line x1="716.5" y1="1261" x2="716.5" y2="-171" stroke="#F20587"/>
+<line x1="766.5" y1="1261" x2="766.5" y2="-171" stroke="#F20587"/>
+<line x1="816.5" y1="1261" x2="816.5" y2="-171" stroke="#F20587"/>
+<line x1="866.5" y1="1261" x2="866.5" y2="-171" stroke="#F20587"/>
+<line x1="916.5" y1="1261" x2="916.5" y2="-171" stroke="#F20587"/>
+<line x1="966.5" y1="1261" x2="966.5" y2="-171" stroke="#F20587"/>
+<line x1="1016.5" y1="1261" x2="1016.5" y2="-171" stroke="#F20587"/>
+<line x1="1066.5" y1="1261" x2="1066.5" y2="-171" stroke="#F20587"/>
+<line x1="1116.5" y1="1261" x2="1116.5" y2="-171" stroke="#F20587"/>
+<line x1="1166.5" y1="1261" x2="1166.5" y2="-171" stroke="#F20587"/>
+<path d="M154.362 807.178C192.675 766.311 242.206 739.54 298.729 735.399C368.034 730.322 428.03 752.441 493.287 773.178C568.525 797.086 641.117 801.827 706.465 750.78C727.964 733.987 741.889 715.049 770.958 711.383C815.338 705.786 861.445 723.29 901.833 738.907C955.342 759.598 1007.19 791.484 1065.49 797.329C1124.3 803.224 1163.01 776.663 1214.04 754.288C1260.81 733.786 1294.02 731.231 1341.27 751.32C1373.11 764.852 1401.59 789.071 1438.28 787.209C1474.6 785.367 1512.72 763.447 1541.1 744.034" stroke="#F20587" stroke-width="3" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_f_0_1" x="0.0345459" y="0.658691" width="1618.22" height="1007.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<radialGradient id="paint0_radial_0_1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(801 518) rotate(90) scale(416)">
+<stop stop-color="#737373"/>
+<stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
