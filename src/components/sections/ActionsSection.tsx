@@ -53,7 +53,7 @@ const ActionsSection = () => {
         </article>
         <ComponentSlideVideos />
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8 items-stretch">
+      <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8 items-stretch">
         {DATA_CARD.map((card, index) => (
           <ComponentInfoCard
             key={index}

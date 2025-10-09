@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
 import { Header, Footer } from '@/components/layout';
+import { ComponentButtonReturnTop } from '@/components/ui';
 
 export const metadata: Metadata = {
   title: 'Bem Me Quer Feliz',
@@ -40,6 +41,7 @@ export default function RootLayout({
         <main className="flex-1 w-full max-w-none overflow-x-hidden">
           {children}
         </main>
+        <ComponentButtonReturnTop />
         <Footer />
       </body>
     </html>
