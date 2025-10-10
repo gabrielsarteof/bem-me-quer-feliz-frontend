@@ -35,29 +35,29 @@ export default function IntroHome() {
 
             <div className="mt-5 flex h-auto max-w-[640px] flex-col gap-8 text-center md:ml-1 md:text-left text-[16px] md:text-[20px] font-[700]">
               <p className="font-satoshi font-bold text-[#6B7280]">
-                Patrocinadores & Parceiros
+                Desenvolvido por:
               </p>
               <div className="flex w-full md:w-100 gap-4 justify-center md:justify-start">
-                <div className="flex justify-center md:full">
+                <div className="flex justify-center items-center md:full">
                   <Image
-                    src="/assets/images/content/reviews.png"
-                    width={500}
-                    height={500}
-                    alt="Reviews"
+                    src="/assets/images/logos/UnderlineLogoDark.svg"
+                    width={1000}
+                    height={1000}
+                    alt="Underline"
                     className="h-auto object-contain w-1/3"
                   />
                   <Image
-                    src="/assets/images/content/trustPilot.png"
-                    width={500}
-                    height={500}
-                    alt="TrustPilot"
-                    className="h-auto object-contain w-1/3"
+                    src="/assets/images/content/plus.svg"
+                    width={20}
+                    height={20}
+                    alt="plus"
+                    className="h-5  w-1/3"
                   />
                   <Image
-                    src="/assets/images/content/capterra.png"
+                    src="/assets/images/logos/controlLogoDark.svg"
                     width={500}
-                    height={500}
-                    alt="Capterra"
+                    height={450}
+                    alt="ControlDev"
                     className="h-auto object-contain w-1/3"
                   />
                 </div>
